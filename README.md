@@ -19,7 +19,7 @@ The **Symbolic Transformer** extends traditional transformer models by integrati
 - **Monte Carlo Tree Search (MCTS)**:  
   - **Lookahead Planning**: Evaluates candidate formulas during decoding using feedback (e.g., \( R^2 \), complexity) to balance accuracy and parsimony.  
   - **Top-K Sampling**: Restricts token expansions to high-likelihood options from transformer logits, ensuring valid expressions.  
-- **Example**: For financial risk prediction, MCTS rejects overfit equations (e.g., \( y = x^{10} \)) in favor of simpler, causal relationships (e.g., \( y = \beta \cdot \text{GDP} \)).  
+- **Example**: For financial risk prediction, MCTS rejects overfit equations (e.g., \( y = x^{10} \)) in favor of simpler, causal relationships (e.g., \( y = \beta \cdot \text{GDP} \)).
 
 ---
 
@@ -31,7 +31,7 @@ The **Symbolic Transformer** extends traditional transformer models by integrati
 
 ### 4. Scalable Training Framework
 - **Multi-Task Loss**:  
-  \[ \mathcal{L} = \mathcal{L}_{\text{LM}} + \lambda_1 \mathcal{L}_{\text{Causal}} + \lambda_2 \mathcal{L}_{\text{SR}} \]  
+  $$ \mathcal{L} = \mathcal{L}_{\text{LM}} + \lambda_1 \mathcal{L}_{\text{Causal}} + \lambda_2 \mathcal{L}_{\text{SR}} $$  
   - **Causal Loss**: Ensures inferred graphs align with known causal dependencies.
   - **Symbolic Regression Loss**: Penalizes deviations from ground-truth formulas.
 - **Cluster Parallelization**: Distributes MCTS simulations across GPU/CPU clusters for real-time industrial-scale tasks.
@@ -58,7 +58,7 @@ The breakthrough improvements in **Symbolic Transformer** redefine the landscape
 2. **Healthcare Diagnostics**:  
    - Generates causal formulas (e.g., \( \text{Recovery} = 0.8 \cdot \text{Dose} - 0.3 \cdot \text{Age} \)) with ethical constraints hardcoded into MCTS.  
 3. **Financial Forecasting**:  
-   - Predicts market shifts using hybrid models (e.g., \( \text{Risk} = 1.2 \cdot \text{Debt} + 0.5 \cdot \text{GDP} \)).  
+   - Predicts market shifts using hybrid models (e.g., \( \text{Risk} = 1.2 \cdot \text{Debt} + 0.5 \cdot \text{GDP} \)).
 
 ---
 
