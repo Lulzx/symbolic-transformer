@@ -1,4 +1,4 @@
-# Symbolic Transformer & SymFormer: A Technical Overview
+# Symbolic Transformer
 
 The **Symbolic Transformer** introduces a paradigm shift in symbolic regression by fusing deep learning with advanced symbolic reasoning. Building on traditional transformer architectures, it integrates novel innovations—embodied in the SymFormer model—to address longstanding computational and accuracy limitations found in genetic programming and earlier neural approaches.
 
